@@ -1,3 +1,7 @@
+body {
+    background-color: #FAF4F2;
+}
+
 .baner-section {
     background-image: url(../images/Photos-Camping-Desktop.jpg);
     background-repeat: no-repeat;
@@ -16,6 +20,20 @@
     align-items: center;
     padding-top: 20px;
 }
+
+/* gallery header */
+.header-for-gallery {
+    margin: 0 auto;
+    max-width: 1518px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: bisque;
+    border-radius: 25px;
+}
+
 .nav-ul {
     display: flex;
     justify-content: space-evenly;
@@ -238,4 +256,216 @@
     font-size: 16px;
     color: black;
     font-weight: 300;
+}
+
+
+
+/*  gallery PAGE starts */
+.gallery-title-block {
+    margin-top: 80px;
+    max-width: 1518px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.gallery-title {
+    margin-top: 40px;
+    font-size: 40px;
+    color: black;
+    width: 456px;
+    text-align: center;
+    line-height: 53px;
+}
+
+
+.row-1 {
+    max-width: 1518px;
+    width: 100%;
+    margin: 80px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row1-blocks {
+    max-width: 357px;
+    width: 100%;
+    height: 465px;
+    background-color: #FFF;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image1 {
+    position: relative;
+    width: 277px;
+    height: 180px;
+}
+.price-span {
+    display: block;
+    position: absolute;
+    width: 145px;
+    height: 50px;
+    background-color: #FFF;
+    border-radius: 14px;
+    bottom: -10%;
+    left: 25%;
+    text-align: center;
+    padding-top: 15px;
+    color: #E76F51;
+    font-size: 16px;
+    font-weight: 400;
+}
+.titles-for-blocks {
+    font-size: 18px;
+    color: black;
+    margin-top: 20px;
+}
+.txt-for-blocks {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+
+}
+.readmore-button {
+    width: 185px;
+    height: 50px;
+    background-color: #8D8D8D;
+    border-radius: 25px;
+    border: none;
+    font-size: 18px;
+    font-weight: 400;
+    color: lightgray;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+
+/* ROW 2 / 3  some points */
+
+.row-1-2 {
+    max-width: 1518px;
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row-1-3 {
+    max-width: 1518px;
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/*  ABOUT US PAGE STARTS */
+.baner-aboutus {
+    background-image: url(../images/aboutus-bg.jpg);
+    background-repeat: no-repeat;
+    max-width: 1920px;
+    width: 100%;
+    height: 1080px;
+    background-size: cover;
+    background-attachment: scroll;
+}
+.header-for-aboutus {
+    margin: 0 auto;
+    max-width: 1518px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 25px;
+}
+
+.about-block {
+    margin: 120px auto;
+    max-width: 1518px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.whoimg {
+    width: 200px;
+    height: 100px;
+    /* opacity: 0.7; */
+    border-radius: 30px;
+}
+
+.about-txt {
+    border:5px solid;
+    border-style: double;
+    border-color: yellow;
+    border-radius: 25px 0px;
+    margin-top: 50px;
+    width: 700px;
+    font-size: 22px;
+    font-weight: 600;
+    color: black;
+    text-align: justify;
+    padding: 10px;
+    text-shadow: 2px 2px #FFF;
+
+}
+
+.objectimg {
+    width: 500px;
+    height: 300px;
+    opacity: 0.6;
+}
+.two-objects {
+    margin: 0 auto;
+    max-width: 1518px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-block {
+    margin-left: 50px;
+    max-width: 500px;
+    width: 100%;
+    height: 350px;
+}
+.service-ul {
+    list-style-type: square;
+    background-color: lightsalmon;
+}
+.service-li {
+    margin-top: 30px;
+    background-color: darkorange;
+    color: #FFF;
+}
+
+/*  intouch section */
+
+.inTouch-block {
+    max-width: 1518px;
+    width: 100%;
+    height: 390px;
+    margin: 80px auto;
+    background-color: #FFD2C6;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.email-layer {
+    width: 616px;
+    height: 80px;
+    border-radius: 20px;
+    border: none;
 }
