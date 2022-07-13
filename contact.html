@@ -7,60 +7,63 @@
     <meta name="author" content="irakli">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>project-1</title>
+    <title>Gallery</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
-    <div class="baner-section">
-        <header class="header-div">
-            <div class="logo-div"><img src="images/Group 86.svg" alt="logoimg"></div>
-            <div class="burger-bar"><i class="fa-solid fa-bars"></i></div>
-            <div class="nav-div">
-                <nav class="navigation">
-                    <ul class="nav-ul">
-                        <li><a class="a-list" href="index.html">HOME</a></li>
-                        <li><a class="a-list" href="aboutus.html">ABOUT US</a></li>
-                        <li><a class="a-list" href="gallery.html">GALLERY</a></li>
-                        <li><a class="a-list" href="contact.html">CONTACT US</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="sign-div">
-                <div class="signUP-div sign-styles">Sign Up</div>
-                <div class="signIN sign-styles">Sign In</div>
-            </div>
-        </header>
-        <div class="title-block">
-            <h1 class="maintitle">Find Yourself Outside.</h1>
-            <p class="title-txt">Book unique camping experiences on over 300,000 campsites, cabins, RV parks, public parks and more.</p>
-            <button type="submit" class="discover">Discover</button>
+    <header class="header-for-aboutus">
+        <div class="logo-div"><img src="images/Group 86.svg" alt="logoimg"></div>
+        <div class="burger-bar"><i class="fa-solid fa-bars"></i></div>
+        <div class="nav-div">
+            <nav class="navigation">
+                <ul class="nav-ul">
+                    <li><a class="a-list" href="index.html">HOME</a></li>
+                    <li><a class="a-list" href="aboutus.html">ABOUT US</a></li>
+                    <li><a class="a-list" href="gallery.html">GALLERY</a></li>
+                    <li><a class="a-list" href="contact.html">CONTACT US</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="four-blocks">
-            <div class="block-1">
-                <img src="images/Group 203.svg" alt="block1image">
-                <h2 class="small-titles">Camping & Day Use</h2>
-                <p class="small-txt">Return to your favorite spot or discover a new one that’s right for you.</p>
-            </div>
-            <div class="block-1 block-2">
-                <img src="images/Group 203.svg" alt="block1image">
-                <h2 class="small-titles">Camping & Day Use</h2>
-                <p class="small-txt">Return to your favorite spot or discover a new one that’s right for you.</p>
-            </div>
-            <div class="block-1 block-3">
-                <img src="images/Group 203.svg" alt="block1image">
-                <h2 class="small-titles">Camping & Day Use</h2>
-                <p class="small-txt">Return to your favorite spot or discover a new one that’s right for you.</p>
-            </div>
-            <div class="block-1 block-4">
-                <img src="images/Group 203.svg" alt="block1image">
-                <h2 class="small-titles">Camping & Day Use</h2>
-                <p class="small-txt">Return to your favorite spot or discover a new one that’s right for you.</p>
+        <div class="sign-div">
+            <div class="signUP-div sign-styles">Sign Up</div>
+            <div class="signIN sign-styles">Sign In</div>
+        </div>
+    </header>
+    <section class="map-section">
+        <div class="map-blocks">
+            <div class="findus-title">Find Us!</div>
+            <div class="googlemap">
+                <iframe class="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26370465.025260236!2d-113.70074106833731!3d36.2139575908862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2z4YOQ4YOb4YOU4YOg4YOY4YOZ4YOY4YOhIOGDqOGDlOGDlOGDoOGDl-GDlOGDkeGDo-GDmuGDmCDhg6jhg6Lhg5Dhg6Lhg5Thg5Hhg5g!5e0!3m2!1ska!2sge!4v1657731316374!5m2!1ska!2sge" width="1518" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
-    </div>
+    </section>
+    <section class="form-section">
+        <div class="forms-div-block">
+            <div class="form">
+                <div class="title">Send your info</div>
+                <div class="subtitle">To contact You</div>
+                <div class="input-container ic1">
+                  <input id="firstname" class="input" type="text" placeholder=" " />
+                  <div class="cut"></div>
+                  <label for="firstname" class="placeholder">First name</label>
+                </div>
+                <div class="input-container ic2">
+                  <input id="lastname" class="input" type="text" placeholder=" " />
+                  <div class="cut"></div>
+                  <label for="lastname" class="placeholder">Last name</label>
+                </div>
+                <div class="input-container ic2">
+                  <input id="email" class="input" type="text" placeholder=" " />
+                  <div class="cut cut-short"></div>
+                  <label for="email" class="placeholder">email</label>
+                </div>
+                <button type="text" class="submit">submit</button>
+              </div>
+        </div>
+    </section>
     <footer class="footer">
         <div class="footer-div">
             <div class="footer-block-1">
@@ -110,7 +113,5 @@
             <i class="fa-solid fa-copyright"></i>
             <p class="copyright-txt">2022. All rights reserved.</p>
         </div>
-    </footer>
-    
+     </footer>
 </body>
-</html>
