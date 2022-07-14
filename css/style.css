@@ -1,3 +1,8 @@
+:root {
+    --font01: 'Pacifico', cursive;
+    --color01: #FFFFFF;
+    --color02: #000000;
+}
 body {
     background-color: #FAF4F2;
 }
@@ -85,6 +90,7 @@ body {
     flex-direction: column;
 }
 .maintitle {
+    font-family: var(--font01);
     font-size: 81px;
     color: #FFF;
     max-width: 580px;
@@ -109,6 +115,19 @@ body {
     background-color: #E76F51;
     border-radius: 25px;
     border: none;
+    text-align: center;
+    font-family: var(--font01);
+    color: var(--color02);
+    text-align: center;
+    padding-top: 12px;
+    transition: all 2s solid;
+}
+.discover:hover {
+    font-size: 25px;
+    cursor: pointer;
+    color: var(--color01);
+    text-transform: uppercase;
+    
 }
 
 /* 4 blocks */
@@ -138,6 +157,7 @@ body {
     outline-color: #FFF;
 }
 .small-titles {
+    font-family: var(--font01);
     margin-top: 20px;
     font-size: 18px;
     color: #FFF;
@@ -271,6 +291,7 @@ body {
     flex-direction: column;
 }
 .gallery-title {
+    font-family: var(--font01);
     margin-top: 40px;
     font-size: 40px;
     color: black;
@@ -528,6 +549,7 @@ body {
     align-items: center;
     border-radius: 50px;
     outline: 2px solid black;
+    font-family: var(--font01);
     font-size: 50px;
     font-weight: 600;
     color: orangered;
@@ -537,7 +559,12 @@ body {
 }
 .findus-title::after {
     content: '\01F525';
-    font-size: 60px;
+    font-size: 50px;
+}
+.findus-title::before {
+    content: '\01F525';
+    font-size: 50px;
+    padding: 5px;
 }
 
 .googlemap {
