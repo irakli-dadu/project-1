@@ -1,7 +1,10 @@
 :root {
     --font01: 'Pacifico', cursive;
+    /* --font02: 'Russo One'; */
+    --font03: 'Edu QLD Beginner', cursive;
     --color01: #FFFFFF;
     --color02: #000000;
+    --color03: #E76F51;
 }
 body {
     background-color: #FAF4F2;
@@ -26,6 +29,19 @@ body {
     padding-top: 20px;
 }
 
+.logo-div {
+    max-width: 50px;
+    width: 100%;
+    height: 50px;
+}
+.logo-div-gall {
+    max-width: 50px;
+    width: 100%;
+    height: 50px;
+    border: 2px solid var(--color01);
+    border-radius: 50%;
+}
+
 /* gallery header */
 .header-for-gallery {
     margin: 0 auto;
@@ -35,7 +51,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: bisque;
+    background-color: #E76F51;
     border-radius: 25px;
 }
 
@@ -47,6 +63,16 @@ body {
 .nav-div {
     max-width: 767px;
     width: 100%;
+}
+.a-list {
+    font-size: 18px;
+    color: var(--color01);
+    font-family: var(--font02);
+    transition: all .5;
+}
+.a-list:hover {
+    color: yellowgreen;
+    font-size: 22px;
 }
 .sign-div {
     max-width: 270px;
@@ -63,9 +89,16 @@ body {
     outline-color: #FFF;
     outline-width: 2px;
     outline-style: solid;
-    padding: 13px 38px;
+    padding: 15px;
     text-align: center;
+    font-size: 18px;
+    color: var(--color01);
+    font-family: var(--font03);
 
+}
+.sign-styles:hover {
+    background-color: var(--color03);
+    cursor: pointer;
 }
 
 /* burger bar styles /// responsive */
@@ -112,14 +145,14 @@ body {
     max-width: 205px;
     width: 100%;
     height: 50px;
-    background-color: #E76F51;
+    background-color: var(--color03);
     border-radius: 25px;
     border: none;
     text-align: center;
     font-family: var(--font01);
-    color: var(--color02);
+    color: var(--color01);
     text-align: center;
-    padding-top: 12px;
+    padding-top: 14px;
     transition: all 2s solid;
 }
 .discover:hover {
@@ -179,7 +212,7 @@ body {
     margin-top: 100px;
     width: 100%;
     height: 527px;
-    background-color: #F8E1DB;
+    background-color: #FCB69F;
     border-radius: 200px 200px 0px 0px;
     position: relative;
 }
@@ -365,6 +398,10 @@ body {
     margin-top: 25px;
     cursor: pointer;
 }
+.readmore-button:hover {
+    background-color: var(--color03);
+    color: var(--color01);
+}
 
 
 /* ROW 2 / 3  some points */
@@ -405,7 +442,6 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: bisque;
     border-radius: 25px;
 }
 
@@ -425,13 +461,14 @@ body {
     /* opacity: 0.7; */
     border-radius: 30px;
     border: 1px solid white;
+    filter: sepia(60%);
 }
 
 .about-txt {
     border:5px solid;
-    border-style: double;
+    border-style: dotted;
     border-color: grey;
-    border-radius: 25px 0px;
+    border-radius: 25px;
     margin-top: 50px;
     max-width: 700px;
     width: 100%;
@@ -440,12 +477,14 @@ body {
     color: #FFF;
     text-align: justify;
     padding: 10px;
+    background: linear-gradient(0deg, rgba(207,150,88,0.12786472010679273) 34%, rgba(207,150,88,0.10265463607317926) 60%);
+
 
 }
 
 .objectimg {
-    width: 500px;
-    height: 300px;
+    width: 550px;
+    height: 370px;
     opacity: 0.6;
     border-radius: 30px;
 }
@@ -455,7 +494,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: top;
 }
 
 .services-block {
@@ -471,7 +510,10 @@ body {
 }
 .service-li {
     margin-top: 30px;
-    background-color: darkorange;
+    background-color: #CF9658;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 5px;
     color: #FFF;
     border-radius: 20px;
     font-size: 20px;
@@ -484,7 +526,7 @@ body {
     width: 100%;
     height: 390px;
     margin: 80px auto;
-    background-color: #FFD2C6;
+    background: linear-gradient(0deg, rgba(252,182,159,1) 34%, rgba(207,150,88,0.3771644399947479) 60%);
     border-radius: 20px;
     display: flex;
     justify-content: space-around;
@@ -529,76 +571,39 @@ body {
     font-weight: 400;
 }
 
-/* contat section STARTS */
+/* contact section STARTS */
 
 .map-blocks {
     max-width: 1518px;
     width: 100%;
     margin: 100px auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
-}
-.findus-title {
-    background-color: lightsteelblue;
-    max-width: 1518px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-    outline: 2px solid black;
-    font-family: var(--font01);
-    font-size: 50px;
-    font-weight: 600;
-    color: orangered;
-}
-.findus-title::first-letter {
-    font-size: 80px;
-}
-.findus-title::after {
-    content: '\01F525';
-    font-size: 50px;
-}
-.findus-title::before {
-    content: '\01F525';
-    font-size: 50px;
-    padding: 5px;
 }
 
 .googlemap {
-    margin-top: 50px;
-    max-width: 1518px;
-    width: 100%;
+    max-width: 818px;
+    width: 50%;
+    height: 500px;
 }
 .map-frame {
+    height: 500px;
     width: 100%;
     opacity: 0.7;
-    filter:sepia(30%)
+    filter:sepia(30%);
 }
 
 /* forms styles */
 
-.forms-div-block {
-    margin: 100px auto;
-    background-image: url(https://thumbs.dreamstime.com/b/wild-flowers-plant-summer-autumn-nature-background-banner-website-55976971.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 35px;
-    max-width: 1518px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .form {
-    background-color: #E76F51;
+    max-width: 700px;
+    width: 50%;
+    background: radial-gradient(circle, rgba(252,182,159,1) 22%, rgba(231,111,81,1) 50%);
     border-radius: 20px;
     height: 500px;
     padding: 20px;
-    width: 320px;
+    /* width: 320px; */
 }
 .title {
     color: #eee;
@@ -688,8 +693,12 @@ body {
     outline: 0;
     text-align: center;
     width: 100%;
+    text-transform: uppercase;
 }
 .submit:active {
     background-color: black;
+}
+.submit:hover {
+    font-size: 30px;
 }
   
