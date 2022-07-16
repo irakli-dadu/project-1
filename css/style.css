@@ -1,6 +1,5 @@
 :root {
     --font01: 'Pacifico', cursive;
-    /* --font02: 'Russo One'; */
     --font03: 'Edu QLD Beginner', cursive;
     --color01: #FFFFFF;
     --color02: #000000;
@@ -40,6 +39,22 @@ body {
     height: 50px;
     border: 2px solid var(--color01);
     border-radius: 50%;
+}
+
+/* burger barr */
+.hamburger
+{
+    display: none;
+    cursor: pointer;
+}
+.bar
+{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
 }
 
 /* gallery header */
@@ -96,6 +111,7 @@ body {
     font-size: 18px;
     color: var(--color01);
     font-family: var(--font03);
+    transition: all .5s ease-in-out;
 
 }
 .sign-styles:hover {
@@ -122,16 +138,16 @@ body {
     color: #FFF;
     max-width: 580px;
     width: 100%;
-    /* height: 218px; */
     text-align: center;
 }
 .title-txt {
+    font-family: 'dadufont';
     margin-top: 30px;
     max-width: 526px;
     width: 100%;
     height: 57px;
     font-size: 18px;
-    color: #FFF;
+    color: var(--color01);
     text-align: center;
 }
 .discover {
@@ -147,7 +163,7 @@ body {
     color: var(--color01);
     text-align: center;
     padding-top: 14px;
-    transition: all 2s solid;
+    transition: all .5s linear;
 }
 .discover:hover {
     font-size: 25px;
@@ -183,11 +199,22 @@ body {
     outline-style: dotted;
     outline-color: #FFF;
 }
+/* hovers for 4-blocks */
+.block-1:hover {
+    background: linear-gradient(0deg, rgba(219,124,92,1) 35%, rgba(255,188,68,1) 62%);
+}
+.block-1:hover .small-titles {
+    color: black;
+}
+.block-1:hover .small-txt {
+    color: black;
+}
 .small-titles {
     font-family: var(--font01);
     margin-top: 20px;
     font-size: 18px;
     color: #FFF;
+    transition: all .3s;
 }
 .small-txt {
     margin-top: 10px;
@@ -195,7 +222,9 @@ body {
     width: 100%;
     text-align: center;
     font-size: 16px;
-    color: #FFF;
+    color: var(--color01);
+    font-family: 'dadufont';
+    transition: all .3s;
 }
 
 
@@ -231,12 +260,14 @@ body {
 }
 
 .footer-1-title {
+    font-family: 'dadufont';
+    font-weight: 700;
     font-size: 18px;
     color: black;
-    font-weight: 700;
 }
 
 .footer-1-txt {
+    font-family: 'dadufont';
     margin-top: 20px;
     width: 615px;
     height: 109px;
@@ -267,12 +298,14 @@ body {
 }
 
 .footer-2-title {
+    font-family: 'dadufont';
     font-size: 18px;
     color: black;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 30px;
 }
 .footer-2-alist {
+    font-family: 'dadufont';
     font-size: 16px;
     color: black;
     font-weight: 400;
@@ -299,10 +332,11 @@ body {
 }
 
 .copyright-txt {
+    font-family: 'dadufont';
     margin-left: 6px;
     font-size: 16px;
     color: black;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 
@@ -322,7 +356,8 @@ body {
     margin-top: 40px;
     font-size: 40px;
     color: black;
-    width: 456px;
+    max-width: 456px;
+    width: 100%;
     text-align: center;
     line-height: 53px;
 }
@@ -369,11 +404,14 @@ body {
     font-weight: 400;
 }
 .titles-for-blocks {
+    font-family: 'dadufont';
+    font-weight: 700;
     font-size: 18px;
     color: black;
     margin-top: 20px;
 }
 .txt-for-blocks {
+    font-family: 'dadufont';
     margin-top: 10px;
     font-size: 16px;
     font-weight: 400;
@@ -386,11 +424,13 @@ body {
     background-color: #8D8D8D;
     border-radius: 25px;
     border: none;
+    font-family: 'dadufont';
     font-size: 18px;
     font-weight: 400;
     color: lightgray;
     margin-top: 25px;
     cursor: pointer;
+    transition: all .5s;
 }
 .readmore-button:hover {
     background-color: var(--color03);
@@ -452,7 +492,6 @@ body {
 .whoimg {
     width: 200px;
     height: 100px;
-    /* opacity: 0.7; */
     border-radius: 30px;
     border: 1px solid white;
     filter: sepia(60%);
@@ -466,8 +505,9 @@ body {
     margin-top: 50px;
     max-width: 700px;
     width: 100%;
+    font-family: 'dadufont';
     font-size: 22px;
-    font-weight: 600;
+    font-weight: 400;
     color: #FFF;
     text-align: justify;
     padding: 10px;
@@ -510,6 +550,8 @@ body {
     padding-bottom: 5px;
     color: #FFF;
     border-radius: 20px;
+    font-family: 'dadufont';
+    font-weight: 400;
     font-size: 20px;
 }
 
@@ -551,15 +593,19 @@ body {
     margin-left: 10px;
 }
 .inTouch-title {
-    width: 475px;
+    max-width: 475px;
+    width: 100%;
     height: 115px;
 }
 .inTouch-name {
+    font-family: 'dadufont';
+    font-weight: 700;
     font-size: 40px;
     color: black;
     margin-bottom: 10px;
 }
 .inTouch-txt {
+    font-family: 'dadufont';
     font-size: 16px;
     color: black;
     font-weight: 400;
@@ -597,18 +643,17 @@ body {
     border-radius: 20px;
     height: 500px;
     padding: 20px;
-    /* width: 320px; */
 }
 .title {
+    font-family: 'dadufont';
     color: #eee;
-    font-family: sans-serif;
     font-size: 36px;
     font-weight: 600;
     margin-top: 30px;
 }
 .subtitle {
+    font-family: 'dadufont';
     color: #eee;
-    font-family: sans-serif;
     font-size: 16px;
     font-weight: 600;
     margin-top: 10px;
@@ -630,6 +675,7 @@ body {
     border-radius: 12px;
     border: 0;
     color: #eee;
+    font-family: 'dadufont';
     font-size: 18px;
     height: 100%;
     outline: 0;
@@ -656,7 +702,7 @@ body {
 }
 .placeholder {
     color: #65657b;
-    font-family: sans-serif;
+    font-family: 'dadufont';
     left: 20px;
     line-height: 14px;
     pointer-events: none;
@@ -676,6 +722,8 @@ body {
     color: yellow;
 }
 .submit {
+    font-family: 'dadufont';
+    font-weight: 700;
     background-color: gray;
     border-radius: 12px;
     border: 0;
@@ -688,6 +736,7 @@ body {
     text-align: center;
     width: 100%;
     text-transform: uppercase;
+    transition: all .4s;
 }
 .submit:active {
     background-color: black;
