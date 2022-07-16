@@ -31,11 +31,6 @@
     .navigation {
         display: none;
     }
-    .burger-bar {
-        display: block;
-        margin-left: 40px;
-
-    }
     .four-blocks {
         margin: 0 auto;
         flex-wrap: wrap;
@@ -91,6 +86,7 @@
 
 
 @media (max-width: 768px) {
+
     .title-txt {
         display: none;
     }
@@ -144,5 +140,11 @@
     .footer-block-1 {
         justify-content: center;
         align-items: center;
+    }
+}
+
+@media (max-width: 380px) {
+    .maintitle {
+        color: #E76F51
     }
 }

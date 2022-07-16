@@ -54,11 +54,13 @@ body {
     background-color: #E76F51;
     border-radius: 25px;
 }
+/* ^^^^^^^^^^^^^^^^^^^^^^^ */
 
 .nav-ul {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    gap: 60px;
 }
 .nav-div {
     max-width: 767px;
@@ -68,7 +70,7 @@ body {
     font-size: 18px;
     color: var(--color01);
     font-family: var(--font02);
-    transition: all .5;
+    transition: all .5s;
 }
 .a-list:hover {
     color: yellowgreen;
@@ -101,14 +103,6 @@ body {
     cursor: pointer;
 }
 
-/* burger bar styles /// responsive */
-.burger-bar {
-    display: none;
-}
-.fa-bars {
-    font-size: 50px;
-    color: #FFF;
-}
 
 
 /* title section */
