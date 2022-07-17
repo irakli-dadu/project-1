@@ -51,6 +51,7 @@
         width: 100%;
         text-align: center;
         transition: 0.3s;
+        z-index: 9999;
     }
     .nav-ul.active {
         left: 0;
